@@ -11,9 +11,14 @@ namespace OOPGame
         static void Main(string[] args)
         {
 
-            Warrior Player1 = new Warrior("Fred", 1000, 120, 40);
+            Console.WriteLine("Welcom player one to the death match please give Warrior a name");
+            string player1Name = Console.ReadLine();
+            Console.WriteLine("Welcom player two to the death match please give Warrior a name");
+            string player2Name = Console.ReadLine();
 
-            Warrior Player2 = new Warrior("Jim", 1000, 120, 40);
+            Warrior Player1 = new Warrior(player1Name, 44, 12, 3);
+
+            Warrior Player2 = new Warrior(player2Name, 44, 12, 3);
 
             Battle.StartFight(Player1, Player2);
 
